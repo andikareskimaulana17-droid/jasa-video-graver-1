@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasa Videographer Rizki</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg,#1e3a8a,#0f172a);
+}
+
+.btn {
+  background: #25D366;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* SECTION */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 250px;
+}
+
+/* GALERI */
+.gallery img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* FORM */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>JASA VIDEOGRAPHER</h1>
+  <p>Video shooting, editing, event, cinematic</p>
+
+  <a class="btn" href="https://wa.me/6289517480465" target="_blank">
+    Chat WhatsApp
+  </a>
+
+  <div id="qrcode" style="margin-top:20px;"></div>
+</div>
+
+<!-- LAYANAN -->
+<div id="layanan" class="section">
+  <h2>Layanan Kami</h2>
+
+  <div class="card">
+    <h3>Video Wedding</h3>
+    <p>Mulai dari Rp 2.000.000</p>
+  </div>
+
+  <div class="card">
+    <h3>Video Event</h3>
+    <p>Mulai dari Rp 1.500.000</p>
+  </div>
+
+  <div class="card">
+    <h3>Editing Video</h3>
+    <p>Mulai dari Rp 500.000</p>
+  </div>
+
+</div>
+
+<!-- GALERI (SUDAH DIGABUNG & DIPERBAIKI) -->
+<div id="galeri" class="section gallery">
+  <h2>Galeri</h2>
+
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Wedding">
+  <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678" alt="Event">
+  <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Videography">
+  <img src="https://images.unsplash.com/photo-1526178613658-3f1622045557" alt="Camera">
+  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Editing">
+  <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" alt="Studio">
+
+</div>
+
+<!-- TENTANG -->
+<div class="section">
+  <h2>Tentang Kami</h2>
+  <p>Kami adalah jasa videographer profesional dengan pengalaman di berbagai event.</p>
+</div>
+
+<!-- TESTIMONI -->
+<div class="section">
+  <h2>Testimoni</h2>
+  <p>"Hasil videonya keren banget!"</p>
+  <p>"Pelayanan cepat dan profesional"</p>
+</div>
+
+<!-- KONTAK -->
+<div id="kontak" class="section">
+  <h2>Pesan Sekarang</h2>
+
+  <input type="text" placeholder="Nama"><br>
+  <input type="text" placeholder="Nomor HP"><br>
+  <textarea placeholder="Pesan"></textarea><br>
+
+  <a class="btn" href="https://wa.me/6289517480465">Kirim via WhatsApp</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Jasa Videographer Rizki
+</footer>
+
+<script>
+new QRCode(document.getElementById("qrcode"), {
+  text: "https://wa.me/6289517480465",
+  width: 150,
+  height: 150
+});
+</script>
+
+</body>
+</html>
